@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="light">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Clément Genninasca">
+
+	<title>Moi, Clément</title>
+	<!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script> -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+<!--<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9"> -->
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+		#so_profile{
+			background-color: rgba(255, 119, 0, 0.2);
+    		border: solid 2px;
+    		border-color: rgb(171, 80, 0);
+
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 10px;
+			grid-template-rows: repeat(2, 1fr);
+
+			padding: 20px;
+		}
+
+		#so_icon{
+			grid-column: 3;
+ 			grid-row: 1/3;
+		}
+
+		#so_link{
+			color: inherit;
+		}
+
+		.project.github {
+			background-color: rgba(51, 109, 255, 0.2);
+			border: solid 2px;
+			border-color: rgb(3, 74, 255);
+
+			padding: 20px;
+			text-align: left;
+		}
+
+		.attachment {
+			width: 10%;
+			max-width: 10px;
+			position: relative;
+			top: 0px;
+			left: 0px;
+		}
+	</style>
+
+    
+
+    <link href="main.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100 text-center text-bg-dark">
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="mb-4">
+		<div>
+		  <h3 class="float-md-start mb-0">Clément Genninasca</h3>
+		  <nav class="nav nav-masthead justify-content-center float-md-end">
+		    <a class="nav-link fw-bold py-1 px-0" href=".">Home</a>
+		    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Projects</a>
+		    <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+		  </nav>
+		</div>
+		</header>
+
+		<main class="container-fluid">
+		<div id="project_menu" class="overflow-auto">
+			<h1 class="title my-3">Programmation</h1>
+			<a href="https://stackoverflow.com/users/15810170/clement-genninasca" id="so_link" class="text-decoration-none">
+			<div id="so_profile" class="project rounded my-1">
+				<div id="people_reached">
+					<h5>People reached</h5>
+					<p>19k</p>
+				</div>
+				<div id="points">
+					<h5>Points</h5>
+					<p>731</p>
+				</div>
+				<div id="answered_questions">
+					<h5>Answers</h5>
+					<p>39</p>
+				</div>
+				<div id="placeholder">
+					<h5>Helpful flags</h5>
+					<p>1</p>
+				</div>
+				<img id="so_icon" class="img-fluid" src="static/Stack_Overflow_icon.png"></img>
+			</div></a>
+			<div class="project github rounded my-1">
+				<img src="static/GitHub_icon.png" class="attachment">
+				<h5>Project name</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		</main>
+
+		<footer class="mt-auto text-white-50">
+		<p><a href="" class="text-white">Clément Genninasca</a>'s personal website.</p>
+		</footer>
+	</div>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body></html>
